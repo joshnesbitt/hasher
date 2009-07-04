@@ -1,0 +1,17 @@
+= Hasher
+
+A really simple encryption module, handy to generate randomly hashed unique strings.
+
+Use it like this:
+
+  include Hasher
+  # => Object
+  
+  generate_hash "somevalueiwanttohash"
+  # => 1a09a8b3dd4b24d5284ac13705523d1b15b55e64
+  
+If you want you can configure a different secret to use in the salt:
+
+  SECRET = "ilikebigbuttsandicannotlie"
+  
+Copyright (c) 2009 Josh Nesbitt <josh@josh-nesbitt.net> under MIT-LICENSE.
