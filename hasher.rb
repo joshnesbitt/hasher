@@ -1,6 +1,5 @@
 module Hasher
   require 'digest/sha1'
-
   SECRET = "ilikebigbuttsandicannotlie"
 
   def generate_hash(string)
