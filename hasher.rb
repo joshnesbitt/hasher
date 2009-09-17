@@ -15,8 +15,8 @@ module Hasher
     Digest::SHA1.hexdigest(SECRET + time_stamp + random)
   end
 
-  def time_stamp(time = Time.now.to_s)
-    time.to_datetime.strftime("%d%Y%l%M")
+  def time_stamp(time = Time.now)
+    time.to_s.to_datetime.strftime("%d%Y%l%M")
   end
 
   def random(size = 10)
