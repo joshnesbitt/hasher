@@ -1,7 +1,7 @@
 module Hasher
   require 'digest/sha1'
   SECRET = "ilikebigbuttsandicannotlie"
-
+  
   def generate_hash(string)
     encrypt string
   end
@@ -16,7 +16,7 @@ module Hasher
   end
 
   def time_stamp(time = Time.now)
-    time.to_s.to_datetime.strftime("%d%Y%l%M")
+    time.strftime("%d%Y%l%M").to_s
   end
 
   def random(size = 10)
